@@ -14,4 +14,4 @@ HAVING
   whale_transactions > 0
 ORDER BY 
   whale_transactions DESC
-# LIMIT 100; -- optional to just see the first 100 largest whale transactions 
+LIMIT 100;
