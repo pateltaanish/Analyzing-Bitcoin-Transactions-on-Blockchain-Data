@@ -4,10 +4,10 @@ SELECT
 FROM
   `bigquery-public-data.crypto_bitcoin.transactions`
 WHERE
-  fee IS NOT NULL 
-  AND block_timestamp >= '2025-03-01' 
-  AND block_timestamp < '2025-04-01'  
+  fee IS NOT NULL
+  AND block_timestamp_month = '2025-03-01'
 GROUP BY
   transaction_date
 ORDER BY
   transaction_date
+
